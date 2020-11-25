@@ -1,0 +1,665 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* overflow-x: hidden; */
+
+}
+header{
+    width:100%;
+    min-height:70px;
+    background-color: white;
+    position: sticky;
+    top:0;
+    display: flex;
+    align-items: center;
+    z-index:99;
+
+}
+.logo span{
+    color:black;
+    font-size:2.2rem;
+    font-weight:700;
+    padding-left: 0.3rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display:inline-block;
+}
+.navbar-nav .nav-link{
+    padding:30px 30px!important;
+    color:black!important;
+    transition:all 0.4s linear;
+}
+.nav-ul{
+    position: relative;
+    margin:0;
+    padding:0;
+    z-index: 9;
+    transition:all 0.3s linear;
+}
+.navbar-nav .active a, .navbar-nav .nav-link:hover{
+    color:#69C6BA!important;
+}
+.navbar-toggler{
+    border:1px solid #69C6BA!important;
+    border-radius:0;
+    color:#69C6BA!important;
+    cursor: pointer;
+
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(104, 199, 187)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*=======end of nav area==============*/
+/*============Banner area============*/
+.banner-area{
+    width:100%;
+    min-height:700px;
+    /* max-height:150vh; */
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../img/banner.jpg');
+    background-position: center center;
+    background-size: cover;
+    /* position: relative;
+    top:100px;
+    left:0; */
+
+}
+.banner-area .container{
+   min-height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+   color:white;
+}
+.banner-area .banner-text h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6rem;
+}
+.banner-area .banner-text img{
+    margin:10px 0;
+}
+.banner-area .banner-text p{
+    font-size: 1.7rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.banner-area .banner-text a{
+    color:white;
+    width:50px;
+    height:50px;
+    /* padding:1rem 1rem; */
+    background-color:#69C6BA;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin:0 auto 4rem auto;
+    transition:all 0.3s linear;
+}
+.banner-area .banner-text a:hover,.priority .priority-header a:hover,.main-form .sbt-btn:hover{
+    background-color:#C66995;
+}
+/*============form section===========*/
+.main-form{
+    width:70%;
+    margin:2rem auto;
+    background:white;
+    color:black;
+}
+.main-form .form-single label{
+    font-size: 0.9rem;
+    color:#212529;
+    font-weight: 600;
+}
+.main-form .form-single input{
+ width:100%;
+ padding:0.5rem 0.4rem;
+ color:#495057;
+ border: none;
+}
+.main-form .form-single select{
+  width:100%;
+  padding:0.5rem 0.4rem;
+  color:#495057;
+ border: none;
+
+}
+.main-form form .row{
+    margin:1.5rem;
+}
+.main-form .form-single{
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ margin:0 0.3rem;
+}
+.main-form .sbt-btn{
+ margin-top:1.1rem;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ padding:1.1rem 0!important;
+ width:100%;
+ background-color: #69C6BA;
+ color:white!important;
+ font-weight: 500;
+ transition:all 0.3s linear;
+}
+.priority{
+    width:100%;
+    overflow-x: hidden;
+}
+.priority .priority-header{
+  text-align: center;
+  padding:2.5rem 0;
+  /* width:100%; */
+  background-color:#efefef;
+}
+.priority .priority-header h2{
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    width:100%;
+
+}
+.priority .priority-header h2 span{
+    font-weight:700 ;
+}
+.priority .priority-header p{
+    width:80%;
+    text-align: center;
+    margin:1.5rem auto;
+    font-size: 1rem;
+}
+.priority .priority-header a{
+    margin:2rem auto;
+    width:200px;
+    padding:1rem;
+    color:white;
+    background-color: #69C6BA;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    transition: all 0.5s linear;
+    text-decoration:none;
+}
+/*===========image slider----------------*/
+.carousel-control{
+    position: absolute;
+    top:50%;
+    right:2%;
+    text-align: center;
+}
+.carousel-controls{
+    position: absolute;
+    top:50%;
+    left:2%;
+    text-align: center;
+}
+.nexts{
+    margin-left: 5.4rem;
+}
+.prev{
+    margin-right: 5.4rem;
+}
+.icon i, .icons i{
+    color:whitesmoke;
+    margin-top: 0.8rem;
+    font-size: 1.5rem;
+}
+.icon, .icons{
+   background-color:rgba(0,0,0,0.5)!important;
+    /* padding:2rem; */
+    height: 50px;
+    width:50px;
+    /* border-radius: 50%; */
+    display:block;
+    transition:all 0.4s linear;
+}
+.icon:hover{
+    background-color: #69C6BA!important;
+}
+.iconright{
+    margin-right: 1.8rem;
+}
+.caro1{
+   min-height:450px;
+}
+.caro-text{
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+.carousel-text{
+ width:90%;
+ min-height: 200px;
+ background-color: #69C6BA;
+ color:white;
+ margin:0 auto;
+ margin-left:-40px;
+ text-align: left;
+ padding:1.5rem 3rem;
+}
+.carousel-text p, .carotext2 p{
+    font-size: 0.8rem;
+}
+.carousel-text a{
+    background-color: white;
+    text-transform: uppercase;
+    padding:1rem 0.5rem;
+    display:block;
+    width:200px;
+    text-align: center;
+    color:#69C6BA;
+    text-decoration: none;
+    transition:all 0.4s linear;
+}
+.carousel-text a:hover{
+    background-color: #C66995;
+    color:white;
+}
+.iconleft{
+    margin-left: 1.8rem;
+}
+.carotext2{
+ width:90%;
+ min-height: 200px;
+ background-color: #C66995;
+ color:white;
+ margin:0 auto;
+ margin-right:-40px;
+ text-align: left;
+ padding:1.5rem 3rem;
+ z-index:9;
+}
+.carotext2 a{
+    background-color: white;
+    text-transform: uppercase;
+    padding:1rem 0.5rem;
+    display:block;
+    width:200px;
+    text-align: center;
+    color:#C66995;
+    text-decoration: none;
+    transition:all 0.4s linear;
+}
+.carotext2 a:hover{
+    background-color: #69C6BA;
+    color:white;
+}
+.icons:hover{
+  background-color: #C66995!important;
+}
+/*==========image map with image----=============*/
+.image-map{
+    background-color: #69C6BA;
+    width:100%;
+    margin-bottom: 2rem;
+    /* height: 200px; */
+}
+.image-map ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width:100%;
+    flex-wrap: wrap;
+    margin:0;
+}
+.image-map ul li{
+    padding:2rem 2.6rem;
+    cursor: pointer;
+   transition:all 0.4s linear;
+}
+.image-map ul li:hover{
+    background-color: #C66995;
+}
+.image-map ul li a{
+    color:white;
+    text-transform: uppercase;
+    /* display:flex; */
+    /* flex-direction: column; */
+    text-align: center;
+    text-decoration: none;
+}
+/*-------------card section--------------*/
+.row-tab{
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+}
+.card-container{
+    display: none;
+}
+.main-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+    margin:1rem auto;
+    background-color: white;
+    box-shadow: 0 2px 3px 2px rgba(0,0,0,0.3);
+    height:auto;
+    position: relative;
+}
+.main-card img{
+    /* width:auto; */
+    padding:0 2rem 0 0;
+    min-height: 200px;
+}
+.main-card h3{
+    color:#212529;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.main-card .sub-heading{
+    color:#C66995;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.main-card .description{
+    width:90%;
+    color:#495057;
+    font-size: 0.9rem;
+}
+.main-card a{
+    color:white;
+    background-image: url('../img/button-curve.png');
+    background-repeat: no-repeat;
+    background-size:auto 100%;
+    background-position:left;
+    background-color: #69C6BA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    -webkit-box-align: center;
+    height:200px;
+    width:400px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition:all 0.4s linear;
+    font-weight: 600;
+    text-align:center;
+}
+.main-card a:hover{
+    background-color: #C66995;
+}
+.main-card .price{
+ font-size: 1.7rem;
+}
+.main-card .price-txt{
+    font-size: 0.9rem;
+    /* margin-right: -40px; */
+}
+.card-btn{
+    width: 200px;
+    background-color: #69C6BA;
+    margin:1rem auto;
+    transition: all 0.4s linear;
+}
+.card-btn:hover{
+    background-color: #C66995;
+}
+
+.card-btn a{
+    color:white;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    padding:1rem 2rem;
+    font-size: 0.8rem;
+}
+.tab-show{
+    display: block;
+}
+/*============form section-------------====*/
+.frm-container{
+ display: flex;
+ justify-content:flex-end;
+ margin:7rem 0.5rem 7rem auto;
+ width:100%;
+}
+.frm-container form{
+    width:50%;
+    padding:0.9rem;
+
+}
+.frm-container input, textarea{
+    background:#F5F5F5;
+    padding:0.7rem;
+    margin:0.5rem auto;
+    font-size: 0.9rem;
+    border:none;
+}
+.frm-container .name{ 
+    float: left;
+    width:50%;
+}
+.frm-container .name input{
+    width:90%;
+}
+.frm-container .email{
+    width:50%;
+    float:right;
+}
+.frm-container .email input{
+    width:90%;
+}
+.frm-container .subject{
+    width:100%;
+    clear:both;
+}
+.frm-container .subject input{
+    width:95%;
+}
+.frm-container .textarea{
+    width: 100%;
+
+}
+.frm-container .textarea .textarea-input{
+    width:95%;
+    resize: vertical;
+}
+.frm-container .form-btn{
+    width:95%;
+    background-color: #69C6BA;
+    color:white;
+    text-transform: uppercase;
+    padding:0.5rem 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+.frm-container .form-btn:hover{
+    background-color: #C66995;
+}
+.frm-container .form-btn:active{
+    background-color: blue;
+}
+/*==========footer section---==========*/
+footer{
+    width:100%;
+    background-color: #69C6BA;
+    text-align: center;
+    color:white;
+}
+footer p{
+    font-size: 0.8rem;
+    padding: 2.5rem 0;
+}
+footer p a{
+    color:white;
+    text-decoration: none!important;
+    transition:all 0.3s linear;
+}
+footer p a:hover{
+    color:#990000;
+}
+
+/*============Media query start 990px =========*/
+@media(max-width:990px){
+    header{
+        height:60px;
+        display: inline-block;
+    }
+    .logo span{
+        font-size: 1.5rem;
+    }
+    .logo img{
+        width:40px;
+    }
+
+    .navbar-nav{
+        position: absolute;
+        top:0;
+        right:0;
+        background:white;
+    }
+    .navbar-nav .nav-link{
+        padding:10px 10px!important;
+    }
+    .main-form{
+        width:100%;
+    }
+    .banner-area{
+        top:70px!important;
+    }
+    .main-form .form-single{
+        margin-bottom: 1.5rem!important;
+    }
+    /*==========carousel area==============*/
+    .main-carousel{
+        width:70%;
+        margin:0 auto;
+    }
+    .caro-text{
+        height:auto;
+        /* margin-top: 0.1rem; */
+    }
+    .carousel-text,.carotext2{
+        width:70%;
+        margin:0 auto;
+    }
+    .order{
+        order:-1;
+    }
+    .carousel-control,.carousel-controls {
+        top:83%;
+    }
+    /*===========card section=============*/
+    .main-card{
+        width:90%;
+        margin:1rem auto;
+    }
+    .main-card .description{
+        width: 100%;
+    }
+    .frm-container{
+        flex-direction: column;
+        margin: 7rem auto;
+        justify-content:center;
+    }
+    .frm-container form{
+        width:100%;
+        
+    }
+}
+/*===========media query for 700px ================*/
+@media (max-width:770px){
+    .main-card{
+        width:45%;
+        flex-direction:column;
+        height: 580px;
+        margin:0;
+    }
+    .main-card img{
+        width: 100%;
+        padding:0;
+        padding-bottom: 1rem;
+    }
+    .card-txt{
+        width: 95%;
+        margin:0;
+        height: 60%;
+    }
+    .main-card .description{
+        margin:0;
+    }
+    .main-card a{
+        width:100%;
+        /* background-image:none; */
+        height: 300px;
+        padding:0;
+        background-image: url('../img/button-curve2.png');
+        background-size: 100% auto;
+        background-position: top;
+        padding-top: 70px;
+    }
+    .row-tab{
+        flex-direction: row;
+        width:100%;
+        margin:1rem 0;
+        justify-content: space-evenly;
+    }
+}
+/*=========medis query for 690px ===============*/
+@media(max-width:690px){
+    .main-carousel{
+        width:90%;
+    }
+    .carousel-text,.carotext2{
+        width:90%;
+    }
+    .main-card{
+        width:270px;
+        height:500px;
+        margin:0.7rem auto;
+    }
+    .main-card a{
+        height:280px;
+        padding-top:30px;
+    }
+    .main-card .price{
+        margin:0;
+    }
+    .main-card .price-txt{
+        margin-top:0.5rem;
+        margin-bottom: 0;
+    }
+    .card-txt{
+        width: 100%;
+        padding-left: 0.5rem;
+
+    }
+    .main-card .description{
+     font-size:0.7rem;
+
+    }
+    .main-card h3{
+        font-size:1.1rem;
+         font-weight: 600;
+    }
+    .main-card .sub-heading{
+        font-size:0.8rem;
+        font-weight: 500;
+    }
+
+}
+@media(max-width:590px){
+    .main-card{
+        width:60%;
+        margin:1rem auto;
+    }
+}
+
+/*-================== end of Media query section=============*/

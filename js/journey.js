@@ -1,0 +1,1 @@
+$('.new-date').text(new Date().getFullYear());
